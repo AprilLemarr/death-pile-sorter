@@ -129,7 +129,6 @@
             border-radius: 8px;
             padding: 16px;
             margin-bottom: 16px;
-            border-left: 5px solid var(--keep);
             border: 2px solid var(--border);
             border-left: 5px solid var(--keep);
             animation: slideIn 0.3s ease-out;
@@ -333,26 +332,6 @@
             font-weight: 600;
             margin-bottom: 16px;
         }
-
-        .history-scroll {
-            max-height: 300px;
-            overflow-y: auto;
-            margin-bottom: 16px;
-        }
-
-        .history-item {
-            font-size: 12px;
-            padding: 8px;
-            margin: 4px 0;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 4px;
-            border-left: 3px solid var(--border);
-        }
-
-        .history-item.keep { border-left-color: var(--keep); }
-        .history-item.send { border-left-color: var(--send); }
-        .history-item.lower { border-left-color: var(--lower); }
-        .history-item.bundle { border-left-color: var(--bundle); }
     </style>
 </head>
 <body>
@@ -400,64 +379,10 @@
             "O'Neill Women's Swimsuit Cover-Up White Mesh M/L $26.99": { action: "KEEP", reason: "seasonal summer", category: "Athleisure", details: "List Mar 1 - Aug 31" },
             "Tommy Hilfiger Polo Dress XS Preppy Old Money Pink Stripe $19.99": { action: "KEEP", reason: "1 watcher", category: "Old Money" },
             "J.Crew Black Label 100% Merino Wool Striped Sweater XS $30": { action: "KEEP", reason: "just listed", category: "Basiccore" },
-            "Free Country Youth Boys Winter Jacket M 10-12 $29.99": { action: "KEEP", reason: "monitor", category: "Kids" },
-            "Reef Mens Pineapple Surfer Hawaiian Shirt Short Sleeve White XL $24.99": { action: "KEEP", reason: "monitor", category: "Boho" },
-            "J Jill Womens Green Textured Sleeve Tee Quiet Luxury $24": { action: "KEEP", reason: "monitor", category: "Grandmacore" },
-            "Levi's Womens 2XL Red Plaid Flannel Shirt Gorpcore Cabincore $28.49": { action: "KEEP", reason: "1 watcher", category: "Cabincore" },
-            "Jessica Simpson Women's Ruched Blouse Plus Size 2X $27": { action: "KEEP", reason: "monitor", category: "Plus Size" },
-            "Sanctuary Tie-Front Top Striped Button Down S $27": { action: "KEEP", reason: "monitor", category: "Basiccore" },
-            "Orvis Women's Sage Green V-Neck Tee Coastal Grandmother $25": { action: "KEEP", reason: "monitor", category: "Grandmacore" },
-            "ALC Women's Striped Button-Up Top 18/20W NWT $26": { action: "KEEP", reason: "monitor", category: "Plus Size" },
-            "Levi's T-Shirt M Vintage Graphic Gray Rainbow Y2K $19": { action: "KEEP", reason: "monitor", category: "Y2K" },
-            "Devotion by Cyrus Olive Green Cardigan Cabincore $19.99": { action: "KEEP", reason: "just listed", category: "Cabincore" },
-            "Kerisma Teal Green Sweater S/M Wool Blend $16.99": { action: "KEEP", reason: "just listed", category: "Basiccore" },
-            "Speechless Juniors Womens XL White Mini Dress $24": { action: "KEEP", reason: "just listed", category: "Y2K" },
-            "Life is Good Women's Color Block Sweater Green Pink L $37": { action: "SEND OFFER", reason: "2 watchers", category: "Boho", details: "Send offer today" },
-            "London Times Floral Maxi Dress S Yellow Boho $20": { action: "KEEP", reason: "monitor", category: "Cottagecore" },
-            "Levi's 529 Womens Curvy Bootcut Jeans Size 8 $28.99": { action: "LOWER PRICE", reason: "Lower to $22", category: "Basiccore", details: "New price: $22" },
-            "Pendleton Womens Plus Size 1X Wool Vest Blue Beige Plaid $48": { action: "SEND OFFER", reason: "2 watchers", category: "Cabincore", details: "Send offer today" },
             "VS PINK Victoria's Secret Sequin Raglan Shirt M Y2K $18.99": { action: "SEND OFFER IMMEDIATELY", reason: "8 watchers", category: "Y2K", details: "High priority" },
             "Vintage Style Mens Green Military Parka L Gorpcore $31.99": { action: "SEND OFFER", reason: "5 watchers", category: "Cabincore", details: "Send offer today" },
             "Buffalo David Bitton Top XL Blue Coastal Grandmacore $29": { action: "SEND OFFER", reason: "4 watchers", category: "Grandmacore", details: "Send offer today" },
-            "Style & Co Fair Isle Tunic Sweater M Sparkle $27.99": { action: "SEND OFFER", reason: "3 watchers", category: "Cottagecore", details: "Send offer today" },
-            "Sasel Los Angeles Metallic Knit Cardigan Purple Gold Whimsigoth L $26.60": { action: "SEND OFFER", reason: "3 watchers", category: "Boho", details: "Send offer today" },
-            "Purple Tie Dye Dress Women M Festival Boho Whimsigoth $17.99": { action: "SEND OFFER", reason: "3 watchers", category: "Boho", details: "Send offer today" },
-            "32 Degrees Heat Puffer Vest Womens XL Pink $19.99": { action: "SEND OFFER", reason: "2 watchers", category: "Athleisure", details: "Send offer today" },
-            "Tommy Hilfiger Women's Button Up Top Orange XL $18": { action: "SEND OFFER", reason: "2 watchers", category: "Old Money", details: "Send offer today" },
-            "Eddie Bauer Womens Color Block Sweater Pink Gray Coastal $16": { action: "SEND OFFER", reason: "2 watchers", category: "Grandmacore", details: "Send offer today" },
-            "Marled Fair Isle Cropped Cardigan Womens S Navy Beige $34": { action: "SEND OFFER", reason: "2 watchers", category: "Cottagecore", details: "Send offer today" },
-            "Chico's Womens M Floral Print Top $47": { action: "LOWER PRICE", reason: "Lower to $28-32", category: "Grandmacore", details: "New price: $28-32" },
-            "Duluth Trading Co Quarter Zip Pullover Mens M $47": { action: "LOWER PRICE", reason: "Lower to $32", category: "Cabincore", details: "New price: $32" },
-            "Daytrip Women's Boho Paisley Blouse XL $39": { action: "LOWER PRICE", reason: "Lower to $24-28", category: "Boho", details: "New price: $24-28" },
-            "Chico's Women's Salmon Ruffle Jacket Grandmacore $34": { action: "LOWER PRICE", reason: "Lower to $26", category: "Grandmacore", details: "New price: $26" },
-            "Jos A Bank Cashmere Sweater V-Neck Burgundy L $34": { action: "LOWER PRICE", reason: "Lower to $24, move CASHMERE to front", category: "Grandmacore", details: "New price: $24, highlight cashmere" },
-            "Ava & Viv Coral Dress V-Neck Long Sleeve $29": { action: "LOWER PRICE", reason: "Lower to $22", category: "Plus Size", details: "New price: $22" },
-            "Worthington Women's Plus Size Blouse 3X $26": { action: "LOWER PRICE", reason: "Lower to $18", category: "Plus Size", details: "New price: $18" },
-            "Ford Bronco Womens Retro Graphic T-Shirt M $22": { action: "LOWER PRICE", reason: "Lower to $16", category: "Y2K", details: "New price: $16" },
-            "Universal Thread Women's Smocked Peplum Top M $22": { action: "LOWER PRICE", reason: "Lower to $15", category: "Basiccore", details: "New price: $15" },
-            "Max Studio Women's Metallic Pleated Dress M $21.84": { action: "LOWER PRICE", reason: "Lower to $16", category: "Basiccore", details: "New price: $16" },
-            "Lane Bryant Plus 14/16 Green Paisley Blouse $21": { action: "LOWER PRICE", reason: "Lower to $16-18", category: "Plus Size", details: "New price: $16-18" },
-            "Womens Fairycore White Flower Crochet Top S/M $20": { action: "LOWER PRICE", reason: "Lower to $15", category: "Cottagecore", details: "New price: $15" },
-            "Style & Co Coral Blouse V-Neck Casual M $19": { action: "LOWER PRICE", reason: "Lower to $14", category: "Basiccore", details: "New price: $14" },
-            "Well Worn Women's Floral Blouse V-Neck L $19": { action: "LOWER PRICE", reason: "Lower to $13", category: "Cottagecore", details: "New price: $13" },
-            "Urban Pipeline Men's Hoodie Large Gray $19": { action: "LOWER PRICE", reason: "Lower to $13", category: "Cabincore", details: "New price: $13" },
-            "Lane Bryant 22/24 Beige Scoop Neck Knit Top $19": { action: "LOWER PRICE", reason: "Lower to $14-16", category: "Plus Size", details: "New price: $14-16" },
-            "Lauren Conrad Coral Top Ruffle Sleeve S NWT $19": { action: "LOWER PRICE", reason: "Lower to $14", category: "Basiccore", details: "New price: $14" },
-            "Lane Bryant Women's Long Sleeve Top Plus 18/20 $16": { action: "LOWER PRICE", reason: "Lower to $12", category: "Plus Size", details: "New price: $12" },
-            "Old Shanghai Peacock Satin Kimono Robe $15.99": { action: "LOWER PRICE", reason: "Lower to $12", category: "Boho", details: "New price: $12" },
-            "Torrid Womens Gray Graphic T-Shirt M $13.99": { action: "LOWER PRICE", reason: "Lower to $12", category: "Y2K", details: "New price: $12" },
-            "LC Lauren Conrad Blazer Gray Jacket Size 12 $18": { action: "LOWER PRICE", reason: "Lower to $13", category: "Old Money", details: "New price: $13" },
-            "Territory Ahead Genuine Leather Jacket Womens Cranberry Red LARGE $57": { action: "REWORK", reason: "Check photos, 8 months listed", category: "Cabincore", details: "Update title and photos" },
-            "Authentic Pigment Pastel Blue Patchwork Rag Quilt Fleece Jacket S $55": { action: "REWORK", reason: "Lead with brand name", category: "Cabincore", details: "Rewrite title" },
-            "Lou & Grey for LOFT Womens Large Black Sweater $17.99": { action: "REWORK", reason: "Lead with brand, add quiet luxury/minimalist keywords", category: "Grandmacore", details: "Rewrite title" },
-            "American Eagle Kimono Cardigan XS/S Boho Paisley $14.99": { action: "REWORK", reason: "Lead with American Eagle Outfitters", category: "Boho", details: "Rewrite title" },
-            "Karen Scott Ugly Christmas Sweater Vest Size M $37": { action: "SEASONAL - BOX", reason: "Relist Oct 1", category: "Seasonal", details: "Store until Oct 1" },
-            "Tiara International Christmas Cardigan XL $27.54": { action: "SEASONAL - BOX", reason: "Relist Oct 1", category: "Seasonal", details: "Store until Oct 1" },
-            "Snowden Christmas Womens Vest Size M $19": { action: "SEASONAL - BOX", reason: "Relist Oct 1", category: "Seasonal", details: "Store until Oct 1" },
-            "Feeling Festive Halloween Sweatshirt Black XL $17.99": { action: "SEASONAL - BOX", reason: "Relist Aug 15", category: "Seasonal", details: "Store until Aug 15" },
-            "Vintage 80s Heartland USA Red Christmas Sweater Small $34.99": { action: "KEEP LISTED", reason: "Just listed July, may sell before Christmas", category: "Seasonal" },
-            "Great Northwest Indigo Womens Cable Knit Sweater Tunic L $37": { action: "END + FB MARKETPLACE", reason: "Women's clothing lot", category: "Plus Size", details: "Women's lot" },
-            "Karen Scott Womens Ribbed Knit Sweater Maroon L $34.99": { action: "END + FB MARKETPLACE", reason: "Women's clothing lot", category: "Plus Size", details: "Women's lot" },
+            "Levi's 529 Womens Curvy Bootcut Jeans Size 8 $28.99": { action: "LOWER PRICE", reason: "Lower to $22", category: "Basiccore", details: "New price: $22" },
         };
 
         // Bundle category keywords
@@ -477,7 +402,6 @@
             bundles: {}
         };
 
-        // Load session from localStorage
         function loadSession() {
             const saved = localStorage.getItem('deathPileSession');
             if (saved) {
@@ -485,7 +409,6 @@
             }
         }
 
-        // Save session to localStorage
         function saveSession() {
             localStorage.setItem('deathPileSession', JSON.stringify(sessionData));
             document.getElementById('itemCount').textContent = `Items scanned: ${sessionData.items.length}`;
@@ -518,52 +441,24 @@
             document.getElementById('error').innerHTML = '';
 
             try {
-                const response = await fetch("https://api.anthropic.com/v1/messages", {
+                const response = await fetch("/.netlify/functions/analyze", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                     },
                     body: JSON.stringify({
-                        model: "claude-sonnet-4-20250514",
-                        max_tokens: 500,
-                        messages: [
-                            {
-                                role: "user",
-                                content: [
-                                    {
-                                        type: "image",
-                                        source: {
-                                            type: "base64",
-                                            media_type: "image/jpeg",
-                                            data: imageData.split(',')[1]
-                                        }
-                                    },
-                                    {
-                                        type: "text",
-                                        text: `Analyze this clothing item QUICKLY. Give me:
-1. Brand (or best guess)
-2. Item type (shirt, sweater, dress, etc)
-3. Color(s)
-4. Size
-5. Condition (new with tag, excellent, good, fair, worn)
-
-Be concise. One line per field. If you can't see it clearly, ask ONE specific question.`
-                                    }
-                                ]
-                            }
-                        ]
+                        imageData: imageData.split(',')[1]
                     })
                 });
 
                 const data = await response.json();
                 if (data.error) {
-                    showError(`API Error: ${data.error.message}`);
+                    showError(`Error: ${data.error}`);
                     showLoading(false);
                     return;
                 }
 
-                const analysis = data.content[0].text;
-                evaluateItem(analysis);
+                evaluateItem(data.analysis);
             } catch (error) {
                 showError(`Error: ${error.message}`);
             }
@@ -571,7 +466,6 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
         }
 
         function evaluateItem(analysis) {
-            // Check known items first (exact matching on analysis)
             let match = null;
             for (const [item, data] of Object.entries(knownItems)) {
                 if (item.toLowerCase().includes(analysis.toLowerCase().slice(0, 20))) {
@@ -585,11 +479,9 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
             if (match) {
                 result = { ...match, type: 'KNOWN' };
             } else {
-                // AI recommendation based on brand guide and bundle categories
                 result = getAIRecommendation(analysis);
             }
 
-            // Add to session and determine bundle
             const item = {
                 analysis,
                 action: result.action,
@@ -600,7 +492,6 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
 
             sessionData.items.push(item);
 
-            // Track bundles
             if (result.action === 'BUNDLE' || (item.category && bundleKeywords[item.category])) {
                 const bundle = item.category;
                 if (!sessionData.bundles[bundle]) {
@@ -626,14 +517,12 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
         function getAIRecommendation(analysis) {
             const lower = analysis.toLowerCase();
 
-            // Brand-based decisions
             const alwaysGrab = ["patagonia", "arc'teryx", "the north face", "columbia", "carhartt", "levi's", "j.crew", "jjill", "vs pink"];
             const brandMatch = alwaysGrab.find(b => lower.includes(b));
             if (brandMatch && !lower.includes("worn") && !lower.includes("stain")) {
                 return { action: "KEEP", reason: "Strong brand", category: detectCategory(analysis) };
             }
 
-            // Condition-based
             if (lower.includes("new with tag") || lower.includes("nwt")) {
                 return { action: "KEEP", reason: "NWT", category: detectCategory(analysis) };
             }
@@ -642,7 +531,6 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
                 return { action: "END + DONATE", reason: "Damage noted", category: detectCategory(analysis) };
             }
 
-            // Default: KEEP for good condition items
             return { action: "KEEP", reason: "Good condition", category: detectCategory(analysis) };
         }
 
@@ -680,7 +568,6 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
         }
 
         function updateHistory(item) {
-            const actionShort = item.action.split(' ')[0];
             const historyHtml = `Items scanned: ${sessionData.items.length}`;
             document.getElementById('scanHistory').innerHTML = historyHtml;
             document.getElementById('scanHistory').style.display = 'block';
@@ -734,7 +621,6 @@ Be concise. One line per field. If you can't see it clearly, ask ONE specific qu
             }
         }
 
-        // Load on startup
         loadSession();
         document.getElementById('itemCount').textContent = `Items scanned: ${sessionData.items.length}`;
     </script>
