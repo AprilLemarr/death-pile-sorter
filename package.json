@@ -1,0 +1,9 @@
+{
+  "name": "death-pile-sorter",
+  "version": "1.0.0",
+  "description": "Death Pile Clothing Sorter",
+  "main": "index.js",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3"
+  }
+}
